@@ -10,7 +10,7 @@ data.each do |bird , value|
      new_hash[name][bird]= []
    end
    if !new_hash[name][bird].include?(section)
-     new_hash[name][bird] << section.to_s
+     new_hash[name][bird].push(section.to_s)
    end
 end
 end
